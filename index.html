@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlavorFind • Recipe Finder</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🔎 FlavorFind</h1>
+      <p>Discover delicious recipes from around the world</p>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="all">All Recipes</button>
+    <button class="tab-btn" data-tab="favorites">❤️ Favorites</button>
+  </nav>
+
+  <main class="container">
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search recipes or ingredients...">
+      
+      <div class="filter-group">
+        <select id="categoryFilter">
+          <option value="">All Categories</option>
+        </select>
+        <select id="areaFilter">
+          <option value="">All Cuisines</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="resultsCount" class="results-count"></div>
+
+    <div id="recipesGrid" class="recipes-grid"></div>
+  </main>
+
+  <!-- Recipe Modal -->
+  <div id="recipeModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-modal">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
